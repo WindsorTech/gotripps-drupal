@@ -1,0 +1,34 @@
+.admin-menu .my-post-lisits {float: left;width: 30%;border: 2px solid #868686;border-radius: 10px;}
+.admin-menu.page-user-edit form, .admin-menu.page-user-edit h1#page-title {float: right;width: 68%;}
+.my-post-lisits ul {list-style-type: none !important;margin-left: 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.post-article {background: url(images/myblog3.png) no-repeat left center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li a {padding-left: 82px;text-transform: uppercase;display: inline-block;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.post-photo-gallery {background: url(images/myblog1.png) no-repeat left center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.post-video {background: url(images/myblog2.png) no-repeat left center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.post-trip-plan {background: url(images/myblog4.png) no-repeat left center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.edit-my-content {background: url(images/myblog5.png) no-repeat left center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.edit-myprofile {background: url(images/myblog6.png) no-repeat -12px center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.edit-account-info {background: url(images/edit-account.png) no-repeat left center;padding: 23px 0px;}
+.admin-menu.page-user-edit #block-block-79 .my-post-lisits ul li.invite-friend { background: url(images/invite-a-friend.png) no-repeat left center;padding: 23px 0px;}
+
+/*form#user-profile-form .form-type-checkboxes > label { display: none !important;}
+form#user-profile-form .form-item.form-type-textfield { margin-bottom: 0px !important;}
+
+form#user-profile-form .form-item.form-type-textfield input { margin-bottom: 0px;}
+
+form#user-profile-form .form-type-checkboxes { margin-bottom: 2em;}*/
+.page-user form#user-profile-form .form-type-checkboxes > label { display: none !important;}
+.admin-menu.page-user-edit-main form#user-profile-form div.field-type-text {
+    float: left;
+    width: 64%;
+}
+.admin-menu.page-user-edit-main form#user-profile-form .field-widget-options-buttons {
+    float: left;
+    margin-top: 15px;
+}
+.admin-menu.page-user-edit-main form#user-profile-form div#edit-profile-main-field-sex {clear: both; width: 100%;margin: 0;}
+.admin-menu.page-user-edit-main form#user-profile-form .form-actions.form-wrapper {
+    clear: both;
+}
+.admin-menu.page-user-edit form#user-profile-form h1 { margin-bottom: -20px; margin-top: 30px;}
+#page-title{background: #fff !important}

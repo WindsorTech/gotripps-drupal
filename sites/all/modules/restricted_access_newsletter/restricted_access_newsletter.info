@@ -1,0 +1,7 @@
+;$Id$
+name =restricted_access_newsletter
+description =  newsletter lists and template shows restricted access so to  remove this restrited access for (ex Lists *- Restricted access -)to show list
+package = Drupal 7 Development
+core = 7.x
+php = 5.2
+ 

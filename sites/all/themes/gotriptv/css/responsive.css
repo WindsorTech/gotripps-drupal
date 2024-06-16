@@ -1,0 +1,1075 @@
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+   #traveltips .traveltips-right ul li a {
+  font-size: 32px;
+}
+}*/
+/********** Responsive css *********/
+
+@media screen and (max-width: 1024px) and (min-width: 1000px){
+	.view-most-recent-articles > .view-content > .views-row{padding: 0px 15px;}
+    .footer_language{margin-top: 0px !important;padding-left: 10px;}
+    .site-footer ul.menu li a{padding: 1.2em 3px !important; float: left;}
+    .form-item-search-block-form input[type="text"]{margin: 0;}
+    form#cse-search-box .gsearch{margin: 0;}
+    .node-type-article .field-name-field-image, .node-blog .field-name-field-image { width: 35%;}
+    .site-footer .menu { margin-top: -10px !important;}
+    .site-footer .row {margin-right: 0 !important;width: auto !important; }
+    .site-footer ul li.first{margin-left: 0 !important}
+    .region-footer-fourthcolumn{padding: 0px !important;}
+    #block-locale-language--3 ul{padding: 0;}
+    .site-footer .copyright{margin-left: 15px !important;}
+    #traveltips .traveltips-right{width: 70% !important; float: right;}
+	#traveltips .traveltips-left { width: 27%;}
+    #traveltips .traveltips-right ul li a { font-size: 30px !important;}
+	.i18n-en #traveltips .traveltips-right ul li a{padding: 5px;}
+	.i18n-es #traveltips .traveltips-right ul li a{padding: 5px;}
+    .i18n-pt-br #traveltips .traveltips-right ul li a{padding: 5px;}
+    li.expanded, li.collapsed, li.leaf{ padding: 0.2em 10px 0 0 !important;}
+    .node-type-article #traveltips .traveltips-left h4 a, .node-type-blog #traveltips .traveltips-left h4 a{	font-size: 24px;}
+	.items-grid .column-home-article{padding: 0 11px;}
+	.page-travel-tour-article-page-view-en .content_manage_article_blog,
+	.page-travel-tour-article-page-view-es .content_manage_article_blog,
+	.page-travel-tour-article-page-view-pt-br .content_manage_article_blog{ width: 30%;float: left;}
+	.page-travel-tour-article-page-view-en .region-sidebar-second-top #block-block-66,
+	.page-travel-tour-article-page-view-es .region-sidebar-second-top #block-block-66,
+	.page-travel-tour-article-page-view-pt-br .region-sidebar-second-top #block-block-66{
+		    width: 100% !important;
+	}
+	.page-travel-tour-article-page-view-en .region-sidebar-second-top #block-mailchimp-lists-gotriptv-newsletter-en,
+	.page-travel-tour-article-page-view-es .region-sidebar-second-top #block-mailchimp-lists-gotriptv-newsletter-es,
+	.page-travel-tour-article-page-view-pt-br .region-sidebar-second-top #block-mailchimp-lists-ecoturismo-e-hot-is-fazenda{
+		width: 100% !important;
+	}
+	.page-user.one-sidebar.sidebar-second .content-wrap {
+		width: 60% !important;
+	}
+	.not-front #block-block-18{ float: left !important; width: 50% !important;}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+.page-tracker .main-wraper {
+    width: 68%;
+}
+.page-tracker .region-sidebar-first, .invite-my-friends .region-sidebar-first {
+    width: 30%;
+}
+.invite-my-friends .region.region-content, .invite-my-friends h1#page-title { width: 66% !important; }
+.page-tracker .my-post-lisits{width: 100%;}
+.page-user-edit .region-sidebar-first{width: 30%;}
+.page-user-edit .main-wraper{width: 66%;float: right;}
+.page-user-edit .region-sidebar-first .my-post-lisits, .invite-my-friends .region-sidebar-first .my-post-lisits{width:100%}
+.page-user-edit form{width: 100%;}
+.page-user form#user-profile-form .form-item.form-type-textfield {width:100%;}
+.page-user form#user-profile-form .form-item.form-type-textfield input{width: 90%;}
+.page-user form#user-profile-form .form-type-checkboxes{width: 100%;}
+.my-profile .field-type-text {float: left; width: 68%;}
+.my-profile .field-type-list-integer{float: left; width: 30%;}
+.my-profile .field-name-field-sex { width: 100%;clear: both;}
+.page-user-edit-main form#user-profile-form .field-widget-options-buttons { margin-top: 0;}
+.page-user-edit .title-spec{width:100% !important; text-align: left !important;}
+.page-user-edit .content-wrap h1#page-title {float: none;width: auto;margin: 0;}
+.page-contact.one-sidebar.sidebar-second .content-wrap {
+    width: 54% !important;
+}
+.one-sidebar.sidebar-second .content-wrap {
+    width: 100% !important;
+}
+.content_manage_article_blog {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+}
+.page-contact.one-sidebar.sidebar-second .content_manage_article_blog {
+    float: left;
+	width: 43%;
+}
+.view-travel-tour-blog-view .views-field.views-field-field-image .field-content,
+.view-travel-tour-article-block-view .views-field.views-field-field-image .field-content {
+	width: 87%;
+}
+#block-block-138{display: block;text-align: left;}
+#block-block-111, #block-block-32, #block-block-113{display: none;}
+.node-type-article .mailchimp-newsletter-wrapper{ float: left;}
+.node-type-article .form-submit{position: relative; top: 33px;left: 10px;}
+.node-type-article .mailchimp-newsletter-wrapper input[type="text"] {width: 200px;}
+.node-type-article .region-sidebar-second-top, .node-type-blog .region-sidebar-second-top{margin-top: 15px;}
+.map-with-regions #world_gmap ul li a strong {font-size: 18px !important;}
+.not-front .tour-thumb {height: 240px !important;}
+.not-front .tour-title a { height: 44px !important;}
+.not-front .tour-thumb a { overflow: hidden; height: 150px; }
+.map-with-regions #world_gmap ul li.asia a {
+    display: block;
+    height: 161px;
+    left: 75px;
+    top: 8px;
+    width: 180px;
+}
+.map-with-regions #world_gmap ul li.asia a strong {
+    left: 310px;
+}
+
+} 
+@media (max-width: 1024px){
+.view-featured-articles {
+    float: none;
+}
+div.map-with-regions {
+    float: left;
+    width: 100%;
+}
+.page-node-420 .content_manage_article_blog,
+.page-node-693 .content_manage_article_blog,
+.page-node-65 .content_manage_article_blog{float: left;text-align: center;}
+#traveltips .traveltips-left h4 a { font-size: 27px;}
+.page-travel-tour-article-page-view-es .region.region-sidebar-second { width: 48% !important; float: right;}
+.map-pages-list .views-row { width: 30%; padding: 0px 13px;}
+div#block-mailchimp-lists-gotriptv-newsletter-en {
+float: left;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 14px;
+}
+    input#mc-embedded-subscribe {
+    display: block;
+    background: #000 !important;
+    position: relative;
+    top: -31px;
+    height: 32px;
+    line-height: 34px;
+}
+.tour-thumb a {
+    overflow: hidden;
+    height: 100px;
+}
+.tour-thumb .tour-destination a {
+    color: #777;
+    float: none !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+.tour-title a {
+    height: 44px;
+}
+.tour-thumb .tour-meta{float: left; width: 100%;margin-top: 6px !important; padding-top: 0 !important;}
+.tour-thumb .tour-caption{float: left;}
+    .node-type-article .node .content {  font-size: 1.071em; padding: 0px 0px 0 0;}
+    .node-type-article center {height: auto !important;overflow: hidden;}
+    .item-list .pager{text-align: center;}
+    div#id-of-content-contact-form { padding: 40px;}
+    td.articlerow {
+    width: 22% !important;
+    float: left !important;
+    padding: 10px !important;
+}
+.view-most-recent-articles .views-field.views-field-field-image > .column.threecol {
+    width: 88%;
+    left: 15px;
+    position: relative;
+}
+.region-content ul, .region-content ol{padding: 0 0 0.25em 0.25em;}
+
+.travel-widget-title{width: 27.5% !important;}
+	#block-block-135 { float: left; text-align: center; width: 100%;}
+	
+    .not-front .region-sidebar-second-top {
+    width: 100% !important;
+    float: left;
+}
+    body.node-type-article .field-name-body img{
+    margin: 15px 0px !important;
+    width: 96% !important;
+    float: right !important;
+    }
+    .ig-b-v-24{background: none !important;}
+    #traveltips .traveltips-right ul li{padding-right: 5px !important;}
+    
+    .node-type-article{width: 100% !important;}
+    #traveltips .traveltips-left{float: left;width: 28%;}
+    #block-block-65{width: auto !important;}
+    .row{width: 95% !important;}
+    .row.subheader > .threecol.column.subheader-block{ width: 300px !important;}
+    .row.subheader > .ninecol.column.subheader-block.last{width: 62% !important;}
+    #traveltips{ float: left !important; margin: 0 auto !important; height: 80px !important; width: 100% !important; margin-top: 22px !important; margin-bottom: 30px !important;}
+    #main-menu, #contentbottom{width: 900px !important;}
+    #cover_gmap{width: 900px !important;}
+    #world_gmap{ width: 70% !important;}
+    .site-content #world_gmap img{margin-left: 0% !important;}
+    #world_gmap ul{left: 45% !important;}
+    .sixcol.column.frontpage-insta{width: 300px !important;}
+    div#sh1, div#sh2{float: none !important;}
+     .region-content{width: 100% !important;}
+     .not-logged-in.page-user .region-sidebar-second{width: auto !important;float: right !important;padding: 0;}
+     .page-travel-tour-article-page-view-en #block-block-66,
+     .page-travel-tour-article-page-view-es #block-block-66,
+     .page-travel-tour-article-page-view-pt-br #block-block-66{
+background: none repeat scroll 0 0 #dadada !important;
+    float: left !important;
+    line-height: 40px !important;
+    margin-right: 7px !important;
+    margin-top: 14px !important;
+    padding: 15px 12px 0 !important;
+    text-align: left !important;
+    width: 50% !important;
+    margin: 0 !important;
+     }
+     .page-travel-tour-article-page-view-en #block-mailchimp-lists-gotriptv-newsletter-en,
+     .page-travel-tour-article-page-view-es #block-mailchimp-lists-gotriptv-newsletter-es,
+     .page-travel-tour-article-page-view-pt-br #block-mailchimp-lists-ecoturismo-e-hot-is-fazenda {
+        width: 46%;
+        float: right;
+        padding-bottom: 10px;
+     }
+     .page-travel-tour-article-page-view-en #block-block-139,
+     .page-travel-tour-article-page-view-es #block-block-139,
+     .page-travel-tour-article-page-view-pt-br #block-block-139 {
+        float: left;
+        width: 300px;
+        margin-left: 15px;
+        display: block;
+     }
+     .region-sidebar-second-top{width: 100% !important;}
+     .page-travel-tour-article-page-view-en .region-content, .page-travel-tour-article-page-view-pt-br .region-content, .page-travel-tour-article-page-view-es .region-content{width: 100% !important;}
+     .node-type-article .field-name-field-image, .node-blog .field-name-field-image{padding: 0 !important; margin-right: 20px;}
+     .node-type-article .field-type-image .field-item.even img{width: 268px !important;}
+     #block-block-73 { width: 100% !important; margin-left: 0 !important; margin-top: 10px !important; padding: 0 !important;}
+     #block-block-58 { width: 40% !important; float: left !important;}
+     
+     .page_language_tile > h2 {margin-left: 0 !important;margin-top: 0 !important;text-align: center !important;}
+
+     .node-type-article #cover_gmap{height: 330px; width: 100%;}
+     .node-type-article .region-sidebar-second,
+     .node-type-blog .region-sidebar-second { width: 48% !important;float:left;}
+     .node-type-blog .region-sidebar-second-top,
+     .node-type-article .region-sidebar-second-top{ width: 48% !important;}
+     
+     .map-with-regions #world_gmap ul li a strong{width: 175px;}
+     #block-block-67{float: none;
+    margin-top: -13px;
+    text-align: center;}
+.page-travel-tour-article-page-view-en .region.region-sidebar-second {
+    width: 46% !important;
+    float: left;
+}
+.page-travel-tour-article-page-view-en div#mailchimp-newsletter-gotriptv_newsletter_en {
+    width: 320px;
+    display: inline-block;
+}
+
+}
+@media (max-width: 900px){
+   
+    #block-block-128 #share-buttons{ margin-left: 192px !important; margin-top: -54px !important;}
+    .i18n-es #block-block-128 > h2{margin-left: 16px !important;}
+    #block-block-58 { width: 90% !important; float: left !important;}
+    #block-block-18 { float: left !important; width: 90% !important;}
+    div#block-block-113 { float: none !important;width: 300px !important;margin: 0 auto;}
+    #block-block-65{width: auto!important;}
+    #user-register-form, #user-login, #user-pass{width: 96% !important;}
+    .row{width: 768px !important;}
+    .row.subheader > .threecol.column.subheader-block{ width: 34.5% !important;}
+    .row.subheader > .ninecol.column.subheader-block.last{width: 55% !important;}
+    #traveltips{ float: left !important; margin: 0 auto !important; height: 80px !important; width: 767px !important; margin-top: 22px !important; margin-bottom: 30px !important;}
+    #main-menu, #contentbottom{width: 768px !important;}
+    #cover_gmap{width: 768px !important;}
+    #world_gmap{ width: 70% !important;}
+    .site-content #world_gmap img{margin-left: 0% !important;}
+    #world_gmap ul{left: 28% !important;}
+    #traveltips{width: 768px !important;}
+    .sixcol.column.frontpage-insta{width: 270px !important;}
+    .travel-widget-title{width: 19.5% !important;}
+    div#sh1, div#sh2{float: none !important;}
+    #traveltips .traveltips-right{float: none !important;}
+    .threecol.column.last.newslettr-container{width: 252px !important;}
+    body.front #mc_embed_signup input.email, body.front #newsletter-subscribe-form #edit-email{width: 90% !important;}
+    .section-title h1, .section-title h4{font-size: 15px; padding-left: 10px;}
+    .traveltips-right ul li a {font-size: 25px !important;}
+    .site-footer ul.menu li a{padding: 1.2em 13px !important;float: left !important;}
+}
+
+@media screen and (max-width: 768px) and (min-width: 760px){
+	.not-front #block-block-58 { float: left !important; width: 42% !important;}
+	.not-front #block-block-18 { float: left !important; width: 54% !important;}
+.map-with-regions #world_gmap ul li.south-america a {
+    height: 130px;
+    width: 103px;
+    left: -76px;
+    top: 121px;
+}
+.site-footer .footer_language ul li.first{margin-left: 0}
+.site-footer .footer_language ul{padding: 0 !important}
+.site-footer .copyright{float: right !important;margin-left:0;}
+.site-footer .menu {
+    float: none !important;
+    display: block !important;
+    margin: 0 auto !important;
+    width: 700px;
+    clear: both;
+    }
+.i18n-es .site-footer .menu {width: 100%;}
+.map-with-regions #world_gmap ul li.south-america a strong {
+    left: 459px;
+    top: -103px;
+}
+.map-with-regions #world_gmap ul li.central-north-americas a {
+    height: 114px;
+    width: 178px;
+    left: -141px;
+}
+.map-with-regions #world_gmap ul li.central-north-americas a strong {
+    left: 524px;}
+.map-with-regions #world_gmap ul li.europe a{width: 82px;left: 58px;}
+.map-with-regions #world_gmap ul li.europe a strong { left: 326px;top: 86px;}
+.map-with-regions #world_gmap ul li.africa a{ height: 124px; left: 36px;}
+.map-with-regions #world_gmap ul li.africa a strong {left: 348px; top: 50px;}
+.map-with-regions #world_gmap ul li.asia a{height: 151px !important;left: 145px !important;}
+.map-with-regions #world_gmap ul li.asia a strong{top: 170px !important;left: 240px !important;}
+.map-with-regions #world_gmap ul li.oceania a {
+    display: block;
+    height: 90px;
+    left: 228px;
+    top: 137px;
+    width: 109px;
+}
+.map-with-regions #world_gmap ul li.oceania a strong { left: 156px; top: 80px;}
+
+
+
+
+}
+
+@media (max-width: 768px){
+	.or{display:none !important}
+#block-block-130 {display:none;}
+	.page-user:not(.page-user-edit)  .region-content{float: none !important;width: 60% !important;margin: 0 auto !important;}
+	.i18n-pt-br #traveltips .traveltips-left h4 a {font-size: 22px;}
+	.site-footer .row {padding-top: 10px !important;}
+	.page-travel-tour-article-page-view-en .content-wrap,
+	.page-travel-tour-article-page-view-es .content-wrap,
+	.page-travel-tour-article-page-view-pt-br .content-wrap{width: 100% !important;}
+	.items-grid .column-home-article{padding: 0 9px;}
+    section.site-content.row {padding: 20px 0 !important;}
+    .not-logged-in.page-user.page-user-login #block-block-66 h1, .not-logged-in.page-user #block-block-66 h1{padding: 10px !important;}
+    .node-type-article .full_main{margin-bottom: 10px;}
+	.not-front.my-profile.my-profile-org ul.primary li{float: left; display: block;}
+	.my-profile.my-profile-org .block-views{width: 95% !important;
+    float: left !important;
+    margin-left: 15px;}
+    .my-profile.my-profile-org .region.region-contentbtm{width: 100% !important;}
+	.row.subheader > .ninecol.column.subheader-block.last{display: none;}
+.content-slider-container{display: none;}
+.ninecol.column.subheader-block.last .square-add-ban {display: block;float: right;}
+    .map-pages-list .views-row {     width: 30%;
+    padding: 0px 10px;}
+.page-user-register .region.region-content {
+    width: 100% !important;
+    float: left;
+}
+.page-user-register .region.region-sidebar-second,
+.not-logged-in.page-user .region.region-sidebar-second{
+    width: 95% !important;
+}
+
+
+.page-user-login .region.region-content {
+    width: 100% !important;
+    float: left;
+}
+.page-user-login .region.region-sidebar-second {
+    width: 95% !important;
+}
+
+
+
+.page-travel-tour-article-page-view-en div#mailchimp-newsletter-gotriptv_newsletter_en,
+.page-travel-tour-article-page-view-es div#mailchimp-newsletter-gotriptv_newsletter_es,
+.page-travel-tour-article-page-view-pt-br div#mailchimp-newsletter-ecoturismo_e_hot_is_fazenda{
+    width: 260px;
+    display: inline-block;
+}
+.mailchimp-newsletter-wrapper input[type="text"] {
+    width: 240px;
+}
+#block-mailchimp-lists-gotriptv-newsletter-en,
+#block-mailchimp-lists-gotriptv-newsletter-es,
+#block-mailchimp-lists-ecoturismo-e-hot-is-fazenda {
+    float: left;clear: both;margin: 20px 0;
+}
+.my-profile-org .sendmessagetouser{background-size: 40px;}
+.page-travel-tour-article-page-view-en .region-sidebar-second {
+    width: 49% !important;
+    float: left;
+}
+    .i18n-en #traveltips .traveltips-right ul li a{font-size: 25px !important;padding: 5px;}
+    .i18n-es #traveltips .traveltips-right ul li a{font-size: 24px !important;padding: 5px;}
+    .i18n-pt-br #traveltips .traveltips-right ul li a{font-size: 24px !important;padding: 5px;}
+    #traveltips .traveltips-left h4 a,
+    .node-type-article.i18n-es #traveltips .traveltips-left h4 a,
+    .node-type-blog.i18n-es #traveltips .traveltips-left h4 a {font-size: 27px;}
+    #block-block-78{display: none;}
+    .i18n-es #traveltips .traveltips-right ul li{padding-right: 7px !important;}
+    #block-views-banner-block, #block-views-banner-block-1, #block-views-banner-block-2{height: 280px;}
+    .view-most-recent-articles > .view-content > .views-row{height: 270px;}
+     
+    td.articlerow {width: 47% !important;float: left !important;padding: 9px !important;}
+    td.articlerow img { width: 95% !important;}
+	#sh1 input[type="submit"], #cse-search-box input[type="submit"]{float: right !important;}
+	.form-item-search-block-form input[type="text"]{float: none !important;}
+	#block-views-banner-block-1, .views_slideshow_cycle_teaser_section, .views-slideshow-cycle-main-frame-row, .content-slider iframe, .content-slider object, .content-slider img{height: 280px !important; min-height: 280px !important;}
+	.views-slideshow-controls-text-previous, .views-slideshow-controls-text-next { bottom: 110px !important;}
+	.widget.widget-add {float: left; text-align: center; width: 50%; margin-top: 10px;}
+	.widget.widget-subscribe { float: left; width: 50%;}
+    #block-block-128 > h2{margin-left: 51px !important;}
+    .not-front #block-block-18 { float: right !important; width: 42% !important; margin-left: 20px;}
+    #traveltips .traveltips-right ul li{padding-right: 0px !important;}
+    .not-front .region-content { width: 96% !important; margin-left: 15px !important;}
+    .header-menu{float: left !important;}
+    #block-block-65{width: auto!important;}
+    .row{width: 740px !important;}
+    .row.subheader > .threecol.column.subheader-block{ width: 100% !important;background: none !important;    text-align: center;}
+    .tour-search-form{margin: 30px auto 0;box-shadow: none !important;
+    border: none !important;}
+    .row.subheader > .threecol.column.subheader-block .travel-widget-title { display: block; width: 100% !important;}
+    #block-block-124{margin-top: 50px;}
+    .row.subheader > .ninecol.column.subheader-block.last{ width: 54% !important; float: right !important; position: relative; right: 28px;}
+    #traveltips{ float: left !important; margin: 0 auto !important; height: 80px !important; width: 739px !important; margin-top: 22px !important; margin-bottom: 30px !important;}
+    #main-menu, #contentbottom{width: 740px !important;}
+    #cover_gmap{width: 730px !important;}
+    #world_gmap{ width: 70% !important;}
+    .site-content #world_gmap img{margin-left: 0% !important;}
+    #world_gmap ul{left: 28% !important;}
+    #traveltips{width: 740px !important;}
+    .sixcol.column.frontpage-insta{width: 45% !important;float:right;}
+    .travel-widget-title{width: 38.5% !important;display: none;}
+    div#sh1, div#sh2{ right: 20px;
+    position: relative; float: none !important; width: 100% !important;}
+    #traveltips .traveltips-right{float: none !important;}
+    .threecol.column.last.newslettr-container{ width: 97% !important; margin-bottom: 20px; margin-top: 20px; }
+    body.front #mc_embed_signup input.email, body.front #newsletter-subscribe-form #edit-email{width: 90% !important;}
+    .section-title h1, .section-title h4{font-size: 15px; padding-left: 10px;}
+    .row.subheader > .threecol.column.subheader-block{ margin-left: 0px !important;}
+    .items-grid{width: 100% !important;text-align: center;}
+    .front .site-content .threecol.column { width: 45%; margin-left: 20px;}
+    .row{padding: 0 !important;}
+    .front .site-content .row{padding-top: 15px !important;;}
+    .view-travel-tour-article-block-view .views-field.views-field-body, .view-travel-tour-article-block-view div.views-field.views-field-title{width: 55% !important;}
+    h1#page-title{text-align: center;margin: 0 !important;}
+    .page-user form#user-profile-form .form-item.form-type-textfield input {max-width: 315px;}
+    .my-post-lisits {margin-top: 0 !important;margin-left: 10px;}
+    .region-content .my-post-lisits {margin-left: 0px;}
+    .node-type-article #block-block-138{float: left;}
+    .node-type-article .region-sidebar-second-top,.node-type-blog .region-sidebar-second-top{float: left}    
+    .not-front h1#page-title{ padding: 5px 0 !important;}
+    .page-travel-tour-article-page-view-en #block-block-66 h1, .page-travel-tour-article-page-view-es #block-block-66 h1, .page-travel-tour-article-page-view-pt-br #block-block-66 h1{ margin: 15px 0 0 !important;}
+    .page-node-add-blog .form-item input,
+    .page-node-add-videos .form-item input,
+    .page-node-add-viagem .form-item input {max-width: 435px !important}
+    ul#superfish-1{padding: 0;}
+    .header-menu ul#superfish-1 > li:first-child > a {padding-left: 0;}
+    .header-menu {float: none !important;
+    width: 90%;
+    margin: 0 auto;}
+    .not-front .page-travel-tour-article-page-view-en #block-block-66, .page-travel-tour-article-page-view-es #block-block-66, .page-travel-tour-article-page-view-pt-br #block-block-66{
+    background: none repeat scroll 0 0 #dadada !important;
+    text-align: left !important;
+    float: left !important;
+    line-height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 97% !important;
+    }
+/*.not-front #block-block-66{
+    border: none !important;
+    width: 50% !important;
+    margin: 20px 43px 0 0 !important;
+    float: right !important;
+}*/
+#block-block-66 {
+    border: none !important;
+    width: 76% !important;
+    margin: 15px auto !important;
+    padding: 0 !important;
+    float: none !important;
+}
+#block-block-66 .or {display: none !important;}
+
+.page-travel-tour-article-page-view-en .region-sidebar-second-top,
+.page-travel-tour-article-page-view-pt-br .region-sidebar-second-top,
+.page-travel-tour-article-page-view-es .region-sidebar-second-top{
+    width: 100% !important
+}
+.page-travel-tour-article-page-view-en #block-mailchimp-lists-gotriptv-newsletter-en,
+.page-travel-tour-article-page-view-es #block-mailchimp-lists-gotriptv-newsletter-es,
+.page-travel-tour-article-page-view-pt-br #block-mailchimp-lists-ecoturismo-e-hot-is-fazenda{
+    float: right;
+    width: 43%;
+    clear: none;
+}
+.page-travel-tour-article-page-view-en #block-block-139,
+.page-travel-tour-article-page-view-es #block-block-139,
+.page-travel-tour-article-page-view-pt-br #block-block-139 {
+   float: left;
+   width: 300px;
+   margin-left: 15px;
+   display: block;
+}
+#traveltips{width: 100% !important;}
+h3.title_gmap{padding: 20px 0 0;}
+
+}
+#block-block-68{display: block;}
+#block-block-103{display: none;}
+
+
+@media (max-width: 767px){
+#block-block-80{font-size:14px;}
+#node-231 spidertag{font-size:12px !important;}
+#user-profile-form .form-actions.form-wrapper .form-submit{float:none;}
+	.not-front .full_main {padding: 10px;background: none;  margin-bottom: 0;}
+	#block-system-user-menu {margin-right: 6px;}
+	#block-block-65 .content{  padding-left: 10px;}
+	#block-block-65 input[type="text"]{max-width: none !important;}
+	#block-block-65 input[type="submit"]{float: left !important;}
+	#block-block-65 .form-type-textfield {float: left; width: 71%;margin-right:  6px;  margin-bottom: 0;}
+	#block-block-65 .form-actions{padding-top: 0;}
+	#block-block-65 .form-actions{width: auto;clear: none; }
+	#block-menu-menu-menus-after-login{display:block;  border: none;  position: absolute; top: 184px;left: 0;}
+	#block-menu-menu-menus-after-login ul li a { padding: 5px 11px;}	
+	.logged-in ul#superfish-1 > li#menu-2002-1,
+	.logged-in ul#superfish-1 > li#menu-2005-1,
+	.logged-in ul#superfish-1 > li#menu-3754-1,
+	.logged-in ul#superfish-1 > li#menu-2003-1,
+	.logged-in ul#superfish-1 > li#menu-2006-1,
+	.logged-in ul#superfish-1 > li#menu-3784-1,
+	.logged-in ul#superfish-1 > li#menu-2001-1,
+	.logged-in ul#superfish-1 > li#menu-787-1,
+	.logged-in ul#superfish-1 > li#menu-3785-1{
+		display: none;
+	}
+	.front .currency-convert-wrap {margin-top: 170px;background-color: #fff;
+	}
+	.front .newslettr-container {position: absolute;}
+	.front .site-content.front-bottom-site-content{background-color: transparent; }
+	.site-header .supheader{ position: static;margin-top: 35px;}
+	.my-profile-org .content-wrap{padding: 0px !important;}
+	.invite-my-friends h1#page-title{float: none;width: 100% !important;text-align: center;}
+	#user-profile-form .field-type-text{float: left;}
+	#user-profile-form  .field-type-list-integer{float: left;clear: right; margin-top: 22px;margin-left: 20px;}
+	#user-profile-form  .field-name-field-sex {clear: both;}
+	.full_main {margin: 26px 0;padding:10px;}
+	.page-tracker .region-sidebar-first,
+	.invite-my-friends .region-sidebar-first,
+	.page-user-edit .region-sidebar-first {float: left;width: 100%;}
+	.page-tracker .main-wraper {float: none;width: 96%;}
+	.invite-my-friends .main-wraper, .page-user-edit .main-wraper {width: 100%;float: right;}
+	.field-name-field-destinos .form-item div,
+	.field-name-field-destinos .form-item th.field-label{
+		    padding: 8px 10px;
+	}
+	.my-post-lisits {margin-bottom: 20px;margin-top: 10px !important;}
+	#traveltips .traveltips-left h4 a,
+    .node-type-article.i18n-es #traveltips .traveltips-left h4 a,
+    .node-type-blog.i18n-es #traveltips .traveltips-left h4 a {font-size: 20px;}
+.node-type-article .content-wrap, .node-type-blog .content-wrap {width: 97% !important;}
+.page-user:not(.page-user-edit) .region-content {width: 100% !important}
+#block-block-127 .content{ float: right !important;}
+#block-block-127{overflow: hidden !important;padding: 10px !important;}
+.content_manage_article_blog {
+    width: 95%;
+    float: none;
+    padding: 24px 15px;
+    overflow: hidden;
+}
+.content-wrap { width: 98% !important;padding: 0 10px !important;}
+.items-grid .column-home-article {width: 46%; float: none;display: inline-block;vertical-align: top;padding: 0 9px !important;}
+.page_language_tile {margin-bottom: 25px;}
+.traveltips-right { margin-top: 15px;}
+#menu-row {margin-top: 42px;}
+.i18n-es.page-user ul.tabs.primary li {
+    display: block !important;
+}
+.page-search .site-content {padding: 0 10px !important;}
+.page-search fieldset#edit-advanced {width: 90%;}
+    #world_gmap ul li.central-north-americas:hover a { background: none !important; }
+#world_gmap ul li.asia:hover a { background: none !important; }
+#world_gmap ul li.south-america:hover a { background: none !important; }
+#world_gmap ul li.europe:hover a { background: none !important; }
+#world_gmap ul li.africa:hover a { background: none !important; }
+#world_gmap ul li.oceania:hover a { background: none !important; }
+.not-front #block-block-58 {
+    float: left !important;
+    width: 40% !important;
+}
+.not-front #block-block-18 {width: 40% !important;}
+	#world_gmap ul li a strong{ width: 200px;font-size: 24px;}
+.ninecol.column.subheader-block.last .square-add-ban {display: none;float: right;}
+.map-pages-list .views-row {width: 45%; margin: 0px 0px 0px 0px;}
+
+    .page-travel-tour-article-page-view-en #block-block-139,
+    .page-travel-tour-article-page-view-es #block-block-139,
+    .page-travel-tour-article-page-view-pt-br #block-block-139{
+        margin: 0 auto;
+        width: 300px;
+        float: none;
+    }
+    .page-travel-tour-article-page-view-en .region.region-sidebar-second,
+    .page-travel-tour-article-page-view-es .region.region-sidebar-second,
+    .page-travel-tour-article-page-view-pt-br .region.region-sidebar-second{
+    float: none !important;
+    width: 300px !important;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+    .i18n-es .site-footer ul.menu li a{font-size: 10px;}
+    #block-locale-language--3 .content ul li.pt-br a{ margin-left: 0px;}
+    .i18n-en #traveltips .traveltips-right ul li a,
+    .i18n-es #traveltips .traveltips-right ul li a,
+    .i18n-pt-br #traveltips .traveltips-right ul li a{font-size: 19px !important;}
+    .i18n-pt-br #traveltips .traveltips-left h4 a  {font-size: 20px;}
+    .i18n-es #traveltips span,
+    .i18n-pt-br #traveltips span{font-size: 18px;}
+    div#id-of-content-contact-form {padding: 0px;}
+    td.articlerow img { width: 87% !important;}
+    .node-type-article .field-type-image .field-item.even img {
+    width: 100% !important;
+    margin: 8px 0px;
+    }
+    .node-type-article .node-article {padding: 0px 10px;}
+    .item-list ul li{padding: 17px;}
+ #block-block-68{display: none;}
+#block-block-103{display: block;margin: 0 auto;width: 300px;}
+    #block-block-67{ float: none !important; text-align: center !important; margin-top: -20px !important;}
+    div#block-block-77 { display: none;}
+    .not-front .region-content {
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+#block-block-76 {display: none;}
+    .my-profile-org section.container.site-content:last-child {
+        padding: 0 10px !important;
+        width: auto !important;
+    }
+    
+    #block-views-user-media-gallery-block .view-user-media-gallery img{width: 97%;height: auto;padding: 0;}
+    .my-profile-org .view-user-posted-videos ul li.views-row{ margin: 0 !important;padding: 5px;width: 30%;min-height: 236px;}
+    .page-node-add-blog .region-content, .page-node-add .site-content{padding: 10px !important;}
+    .my-post-lisits {width: 93% !important;}
+    .my-form-content{width: 97% !important}
+    .page-node-add-blog .form-item input,
+    .page-node-add-videos .form-item input,
+    .page-node-add-viagem .form-item input,
+    .node-form .form-item input {max-width: 240px !important;}
+    .node-form #edit-body,
+    .page-node-add .field-type-text-long,
+    .node-form .field-type-image,
+    .node-form .field-type-video-embed-field,
+    .page-node-add .field-type-text{max-width: 94%;}
+    .node-form .node-buttons,
+    .page-node-add .form-actions{
+        clear: both;
+        width: 100%;
+        float: left;
+    }
+    #invite-form input[type="text"]{width: 300px;}
+    .invite-my-friends .region-content{width: 100% !important}
+    .invite-my-friends #invite-form{width: 93%;margin: 0 auto;}
+    .my-profile-org .form-type-checkboxes {
+        float: left !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .node-form .node-buttons .form-actions{width: 100%;}
+    .page-tracker .region-content {
+        max-width: 96%;
+        float: left;
+        overflow: auto;
+        margin-left: 10px !important;
+    }
+    #user-profile-form {float: none !important;}
+    .page-travel-tour-article-page-view-en #block-mailchimp-lists-gotriptv-newsletter-en,
+    .page-travel-tour-article-page-view-es #block-mailchimp-lists-gotriptv-newsletter-es,
+    .page-travel-tour-article-page-view-pt-br #block-mailchimp-lists-ecoturismo-e-hot-is-fazenda{
+        float: left;
+        width: 100%;
+        padding: 0 10px;
+    }
+    /*.page-travel-tour-article-page-view-en #block-block-139,
+    .page-travel-tour-article-page-view-es #block-block-139,
+    .page-travel-tour-article-page-view-pt-br #block-block-139{
+        display: none;
+    }*/
+    
+    .my-profile.my-profile-org .block-views {margin-left: 0;width: 100% !important; }
+	.widget.widget-subscribe { float: left; width: 100%;margin-bottom: 0;}
+	.threecol.column.last.newslettr-container{margin: 0;}
+	.front div#block-block-51 {display: none;}
+	.front #block-block-109 { display: none;}
+	.front div#block-block-24 {display: block;}
+	.front div#block-block-24 p{margin: 0;}
+	form#cse-search-box .gsearch{width: 73% !important; }
+	.featured-blog #block-block-18 .content {  padding: 0px 13px;}
+	.featured-blog #block-block-18 { width: 100% !important; background: #fff; padding: 0; margin: 0; border: none; box-shadow: none;}
+	form#mc-embedded-subscribe-form{background: #fff; padding: 10px 0px !important;}
+	.front form#mc-embedded-subscribe-form .section-title,
+	.front form#mc-embedded-subscribe-form .section-title + p {padding-left: 20px;padding-right: 20px;}
+	.front form#mc-embedded-subscribe-form .mc-field-group {padding-left: 20px;padding-right: 20px;}
+    .form-item-search-block-form input[type="text"] { width: 93% !important;}
+    form#search-block-form--2 {float: left; width: 100%;}
+    .section-title.currency-title{width: 100% !important; box-shadow: none !important; padding-top: 6px;}	.featurecontent{width: 160px;}
+	body.node-type-article .field-name-body img{margin: 0 !important;}
+	h3.title_gmap{margin-top: 0;padding:0}
+    .item-list ul { margin: 0 !important; padding: 0 !important;}
+    .logged-in .header-menu .menu { height: 125px;}
+	.not-logged-in .header-menu .menu { height: auto;}
+    #block-block-116.block.block-block {  float: left;width: 100%; display: none;}
+	.nav_toggle span {
+    background: #fff;
+    height: 3px;
+    display: -webkit-box;
+    width: 27px;
+    margin-bottom: 4px;
+}
+.page-contact .site-content {width: 100% !important;margin: 0 auto;}
+.page-contact #block-block-20{overflow: hidden;width: 300px;margin: 0 auto;}
+.not-front .view-most-recent-articles > .view-content > .views-row{width: 46% !important; height: auto !important;}
+.header-menu ul#superfish-1 > li{float: none !important;}
+.nav_toggle{
+	display: block;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.51);
+    padding: 13px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.mobile_menu{
+    display: none;
+    background: rgb(51, 51, 51);
+    height: auto;
+    width: 100%;
+}
+    #block-block-128 > h2{ margin-left: 20px !important;margin-bottom: 0;}
+	#block-block-128 .content{margin-left: 8px;}
+    .node-type-article #block-block-127 #share-buttons, .node-type-blog #block-block-127 #share-buttons{margin-left: 5px !important;  margin-top: 0 !important;}
+    #block-block-128 #share-buttons{ margin-left: 17px !important;  margin-top: 0 !important;}
+.not-front #block-block-73 { width: 100% !important; margin-left: 0 !important; margin-top: 0 !important; padding: 0 !important;}
+
+.row.subheader > .ninecol.column.subheader-block.last { 
+    margin-top: 35px;
+	width: 96% !important;float: left !important;position: relative;left: 12px;}
+#cover_gmap {width: 100% !important; float: left; background: #fff !important; height: 360px !important;}
+div.map-with-regions{width: 100% !important; margin: 0 !important;}
+.site-container{ min-height: 95% !important; width: 100% !important; margin: 0 auto !important;}
+.row {width: 100% !important;}
+.region-header{width: 47% !important;}
+.travel-widget-title { width: 100% !important;}
+.row.subheader > .threecol.column.subheader-block { width: 100% !important; margin-left: 0px !important; text-align: center;}
+.front .site-content .threecol.column{width: 100% !important;}
+.sixcol.column.frontpage-insta { margin: 0; width: 100% !important;margin-left: 0px;background: #fff;padding: 20px 0;}
+#block-block-131 .content { padding: 0px 8px;}
+.footer_language {margin: 0;float: left;padding-left: 5px;}
+.site-footer .menu{
+    display: block !important;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: both;
+    width: 600px;
+    overflow: hidden !important;
+    padding-left: 0 !important;
+}
+.i18n-es .site-footer .menu{ width: 546px;}
+.i18n-pt-br .site-footer .menu{ width: 615px;}
+.site-footer .copyright{margin: 0 !important;float: right !important;width: auto !important;  padding-right: 5px;}
+.site-footer .footer_language ul{padding: 0}
+.site-footer .footer_language ul li.first{margin-left: 0}
+.site-footer .menu ul li {padding: 0.2em 0.2em 0 0}
+.site-footer ul.menu li.first a{padding-left: 0;}
+.page_language_tile > h2{width: 100% !important; margin: 0 !important; text-align: center;}
+#main-menu, #contentbottom {width: 100% !important;}
+#block-block-119, #traveltips{width: 100% !important;height: 90px !important;}
+#traveltips .traveltips-left{float: left !important;}
+#traveltips .traveltips-right { float: left !important; width: 68% !important;}
+.traveltips-right ul li a { font-size: 19px !important; float: left !important; padding: 0px 8px !important;}
+.front .site-content .threecol.column{margin-left: 0px !important;}
+span#insta-link{margin-top: 60px !important; padding-left: 16px;}
+iframe{width: 100% !important;}
+.front div#block-block-24 iframe {width:300px !important;text-align:center;}
+#block-block-135 iframe{width: 300px !important;}
+body.node-type-blog .field-item.even > img{width: 100% !important;}
+.region-sidebar-second-top{padding: 0 !important; margin-top: 20px !important;}
+.row.subheader > .threecol.column.subheader-block{background: none !important;margin: 0px 0px 0 !important;}
+div#sh1, div#sh2 {right: 0; width: 100% !important;}
+#block-block-65 { width: 100% !important;  float: left;  margin: 0;  left: 0;padding-top: 18px;}
+.supheader .block-locale{position: absolute;top: 16px; left: 9px;}
+.site-footer ul.menu li a { padding: 0.2em 8px !important;float: left !important;}
+.not-front .region-sidebar-second{width: 100% !important; float: left !important;}
+.node-type-blog .region-sidebar-second,.node-type-article .region-sidebar-second {width: 48% !important; float: right !important;}
+
+#world_gmap ul{left: 3% !important;}
+.front #world_gmap ul { left: 4% !important;}
+#world_gmap{width: 100% !important;}
+.site-content #world_gmap img{width: 60%;}
+div#block-block-24{padding-left: 30px;}
+.main-slider{display: none;}
+#cboxContent{
+    /*width: 74% !important;
+    padding: 30px !important;
+    margin: 0px 0px 0px 20px !important;
+    height: 389px !important;*/
+    max-width: 100%;
+    height: 600px !important;
+}
+
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxMiddleLeft, #cboxMiddleRight,
+ #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight{display: none !important;}
+#colorbox, #cboxWrapper, #cboxLoadedContent{
+	width: 97% !important;
+    height: auto !important;
+    overflow: visible;
+    padding: 15px 5px 5px;}
+.tour-search-form{width: 100% !important;}
+.tour-search-form{border: none !important;}
+.tour-search-form .content iframe{
+    float: none;
+    /*width: auto !important;*/
+}
+.tour-search-form #block-block-124 {background: none !important;}
+div#block-block-24 {height: auto !important; padding-left: 0 !important; position: static !important; float: left !important; width: 100% !important;}
+
+.tour-search-form p { color: #ffffff; font-size: 14px; margin: -6px auto auto; width: 300px;}
+.view-travel-tour-blog-view .views-field.views-field-field-image img, .view-travel-tour-article-block-view .views-field.views-field-field-image img {
+    margin: 0 !important;
+    width: 88% !important;
+}
+.page-travel-tour-article-page-view-pt-br #block-block-66 h1{margin: 0px 0 0 !important; padding: 20px 0 0 0 !important;}
+.page-user-register .region.region-sidebar-second #block-block-66,
+.page-user .region.region-sidebar-second #block-block-66,
+.page-travel-tour-article-page-view-en #block-block-66,
+.page-travel-tour-article-page-view-es #block-block-66,
+.page-travel-tour-article-page-view-pt-br #block-block-66 {
+    border: none !important;
+    width: 92% !important;
+    margin: 0 auto !important;
+    padding: 10px 10px 10px 0 !important;
+    float: none !important;
+    }
+#block-block-66 .or{display: none !important;}
+.contact-form {padding: 0 10px;}
+.page-user-register .region.region-sidebar-second,
+.not-logged-in.page-user .region.region-sidebar-second{width: 100% !important;margin-top: 15px;}
+.node .content{padding: 0px 20px 0 20px;}
+.node-type-media-gallery .content{padding: 0;}
+.map-with-regions #world_gmap ul li a strong {width: 200px;}
+.front #cover_gmap{    height: 380px !important;}
+.tour-thumb a { overflow: visible; height: auto; float: none;}
+.tour-thumb{height: auto !important;}
+}
+@media screen and (max-width: 767px) and (min-width:320px){
+#share-buttons img {margin: 0px 0;}
+.myprofiledetails #share-buttons iframe{width: 30px !important;margin-top:0 !important;padding:6px 0 0}
+.myprofiledetails #share-buttons iframe:nth-last-child(1) {display: inline-block;}
+.myprofiledetails #share-buttons iframe:nth-last-child(2) {display: none;}
+}
+
+@media (max-width: 568px){
+
+	#block-menu-menu-menus-after-login {top:0;}
+	#block-menu-menu-menus-after-login{position: relative;margin-top: 15px;}
+	#block-block-65 { padding-top: 0px;text-align: left;}
+	.items-grid .column-home-article{width: 48%;margin: 15px auto !important;float: none;padding: 0 4px !important;}
+	.items-grid .column-home-article.first {padding-left: 9px;}
+	.traveltips-right .clearfix li::after{display: block;}
+	.site-header .logo {float: none;}
+	.site-header .logo img { margin: 0 auto;}
+	.region-header{margin-top: 20px !important;text-align: center;width: 100% !important;}
+    .page-node-180 #block-block-135,
+    .page-node-181 #block-block-135,
+    .page-node-179 #block-block-135{ width: 100%; float: left;}
+    #block-block-58 iframe+p img{width: 100%;}
+    .content_manage_article_blog {padding: 0;width: 100%;}
+    .site-footer .menu{width: auto !important;}
+	.captcha.form-wrapper .fieldset-wrapper,.captcha.form-wrapper .fieldset-wrapper img{width:250px !important;float:left;}
+    .front div#block-block-24{margin-top: 25px;}
+    .node-type-blog .meta.submitted{text-align: center}
+    .not-front .view-most-recent-articles > .view-content > .views-row {width: 45% !important;height: auto !important;
+}
+.view-most-recent-articles .views-field.views-field-field-image > .column.threecol { width: 91%;}
+    .map-pages-list .views-row { width: 88%; padding: 0px 20px;}
+    div#block-mailchimp-lists-gotriptv-newsletter-en { float: left; width: 96%; margin-left: 16px;}
+.page-travel-tour-article-page-view-en div#mailchimp-newsletter-gotriptv_newsletter_en { width: 200px; display: inline-block;}
+.mailchimp-newsletter-wrapper input[type="text"] {width: 90%;}
+
+
+    .i18n-es .site-footer ul.menu li a { font-size: 14px;}
+    .node-type-article td { width: 100%; float: left; padding: 0;}
+    .node-type-blog td { width: 100%; float: left; padding: 0;}
+    td.articlerow span span a img {
+    width: 85%;
+}
+td.articlerow {
+    width: 100% !important;
+    padding: 25px 0 !important;
+}
+/*    .node-type-article #world_gmap ul {
+    top: 166px !important;
+    left: -25% !important;
+}*/
+    #traveltips .content p { display: none;}
+	.not-front #block-block-58 {float: none !important;width: 56% !important;margin: 0 auto;}
+.not-front .region-sidebar-second{width: 98% !important; margin: 0 auto;float: none !important;}
+.not-front #block-block-18 {
+    float: none !important;
+    width: 50% !important;
+    right: 0;
+    position: relative;
+    margin: 0 auto;
+}
+.i18n-en #traveltips .traveltips-right ul li a,
+.i18n-es #traveltips .traveltips-right ul li a,
+.i18n-pt-br #traveltips .traveltips-right ul li a{font-size: 27px !important;padding: 10px 0 !important;}
+	.form-item-search-block-form input[type="text"] {float: left !important;}
+	#traveltips .traveltips-right ul{margin-bottom: -40px;}
+    .form-item-search-block-form input[type="text"] { width: 96% !important;  margin-bottom: 3px;}
+	span span span strong {font-size: 16px;margin-bottom: 20px;float: left;width: 100%;}
+	.not-logged-in.page-user.page-user-login #block-block-66 h1, .not-logged-in.page-user #block-block-66 h1{margin-top: 13px; padding-left: 20px;}
+	ul.tabs.primary li { display: block !important;}
+	.confirm-parent, .password-parent{width: 100% !important;}
+	.password-strength{width: 100% !important;}
+	.not-logged-in.page-user #block-block-66 .or{display: none;}
+	.page-user .form-item .description{width: 97% !important;}
+	div.password-confirm{display: none;}
+	div.map-with-regions{width: 100% !important; margin: 0 !important;}
+	form#mc-embedded-subscribe-form { padding-left: 20px;}
+	#cover_gmap { width: 100% !important; float: left !important; height: 598px !important;}
+	#world_gmap{width: 100% !important;}
+    .site-content #world_gmap img{width: 100%;}
+	h3.title_gmap{margin-top: 0px;}
+	#world_gmap ul{left: 0% !important;
+    top: 250px !important;
+    margin-left: -360px !important;
+    position: relative !important;}
+	.field-name-body img{
+	margin: 10px 0 !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+	}
+    #block-block-113,#block-block-32,#block-block-141 {float: none;width: 300px; margin: 0 auto;}
+    .fb_iframe_widget span{width: 100% !important;}
+    .node-type-blog .content_manage_article_blog #block-block-111,
+    .node-type-article .content_manage_article_blog #block-block-111{float: none;margin: 0 auto;width: 304px;overflow: hidden;}
+    .fetureout{padding-left: 13px;}
+    .not-front .region-sidebar-second h2 { padding-left: 10px;}
+    .not-front .region-sidebar-second-top{width: 100% !important;padding: 15px 0px !important;}   
+    .footer_language { margin-top: 5px;float: none}
+    .not-front .region-content{margin-bottom: 30px !important;}
+    #block-locale-language--3 .content ul li.pt-br a{margin-left: 0 !important;}
+    .row.subheader > .threecol.column.subheader-block { width: 99% !important; margin-left: 2px !important;}
+    #block-block-18{width: 86% !important;}
+    .featurecontent { float: left !important; width: 44% !important;}
+    #block-block-119, #traveltips{width: 100% !important;height: auto !important;margin-bottom:0px !important;}
+    #block-block-140 {display: inline-block;width: 100%;margin: 20px auto;overflow: hidden;text-align: center;}
+#traveltips .traveltips-left{float: none !important;width: 100%; border: 0;border-bottom: 2px dotted #A8A8A8;margin-bottom: 12px;}
+#traveltips .traveltips-right { float: none !important; width: 100% !important;padding-left: 0;}
+.traveltips-right ul li a { border-top: solid 1px; line-height: 37px !important; float: none !important; padding: 0px 0px !important;}
+.traveltips-right ul li a, #traveltips .traveltips-left h4 a{font-size: 27px !important;}
+#traveltips .traveltips-right ul{ margin-top: 13px !important;}
+#traveltips .traveltips-right ul li{ width: 100%;}
+#traveltips .traveltips-left h4{margin: 10px 0 18px !important;}
+.form-actions{padding: 0 !important;}
+.site-footer ul.menu li { display: block; width: 100%;}
+.site-footer ul.menu li a { display: block; width: 100%; text-align: center;}
+.site-footer .menu{margin-top: 10px !important;}
+.form-item.form-type-textfield.form-item-search-block-form { display: inline-block !important; width: 71%; margin-bottom: -5px; margin-right: 20px;float: left;}
+.form-actions{ display: inline-block !important; width: 21%; position: relative; }
+#sh1 input[type="submit"], #cse-search-box input[type="submit"]{ margin: 2px 0 -12px;}
+.front #cover_gmap {height: 590px !important;}
+.front.i18n-en #world_gmap ul{left: 0% !important;}
+#contact-site-form .form-actions{
+       display: inline-block !important;
+       width: 100%;
+       position: relative;
+       margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 375px){
+#cboxContent .form-actions {width: auto;padding-top: 13px !important;}
+body.node-type-article .field-name-body img{width: 100% !important; margin: 0px 0px 20px 0 !important;}
+#block-block-127 .content {float: left !important;}
+#block-block-127 h2,#block-block-128 h2{margin-top:2px;}
+.page-user-register .region.region-sidebar-second #block-block-66,
+.page-user .region.region-sidebar-second #block-block-66,
+.page-travel-tour-article-page-view-en #block-block-66,
+.page-travel-tour-article-page-view-es #block-block-66,
+.page-travel-tour-article-page-view-pt-br #block-block-66 {
+    padding: 10px 10px 0 0 !important;
+    }
+	#user-register-form input[type="text"], 
+	#user-login input[type="text"], #user-login input[type=password],
+	#user-pass input[type="text"]{width:250px;}
+	.my-profile-org .view-user-posted-videos ul li.views-row{ min-height: 190px;}
+	.not-front .container.site-content.row{padding: 0 !important;}
+	#block-block-65 .form-actions{margin-left: 10px;}
+	#block-menu-menu-menus-after-login{position: relative;margin-top: 10px;}
+	.i18n-es #traveltips span, .i18n-pt-br #traveltips span{  font-size: 20px;}
+	.supheader .block-locale li {padding: 6px 0px;}
+    .site-content #world_gmap img{width: 100%;}
+    #share-buttons img{width: 100%;}
+    .map-with-regions #world_gmap ul li a strong{width: 230px;}
+    .items-grid .column-home-article{width: 95%;}
+	.tour-thumb img{height: auto;}
+	#world_gmap ul{top: 175px !important;}
+	.map-with-regions h3.title_gmap span, .map-with-regions h3.title_gmap {font-size: 26px;}
+	.not-front .view-most-recent-articles > .view-content > .views-row{ width: 90% !important;margin: 0 auto;padding: 0;float: none;display: block;}
+	.content_manage_article_blog{margin: 0 auto;}
+	.not-front #block-block-58{width: 95% !important;}
+	#cover_gmap, .front #cover_gmap{ height: 500px !important;}
+	.not-front #block-block-18{ width: 84% !important;float: none !important;}
+	.view-travel-tour-blog-view .views-field.views-field-field-image,
+	.view-travel-tour-article-block-view .views-field.views-field-field-image{width: 93%}
+	.view-travel-tour-blog-view .views-field.views-field-field-image img,
+	.view-travel-tour-article-block-view .views-field.views-field-field-image img{width: 100% !important;}
+	.view-travel-tour-blog-view div.views-field.views-field-title,
+	.view-travel-tour-article-block-view div.views-field.views-field-title,
+	.view-travel-tour-blog-view .views-field.views-field-body,
+	.view-travel-tour-article-block-view .views-field.views-field-body{width: 97%;}
+	#block-block-128{margin-top: 0;padding: 10px 0px;margin-left: 0;}
+	#block-block-128 > h2{margin-left: 7px !important;padding-top: 0;}
+	#block-block-128 .content{margin-left: 0;margin-top: 10px;}
+	#block-block-128 #share-buttons {margin-left: 0 !important;margin-top: 0 !important;}
+	.content-wrap{padding: 0 5px !important;}
+	
+	.userprofile-cls{padding: 10px 0;}
+	.page-node-add-blog .field-name-field-add-more-image .fieldset-legend{font-size: 12px;}
+	.page-node-add-blog .node-buttons{margin-top: 10px;}
+	.node-type-media-gallery .content-wrap {padding: 0 5px !important;}
+	.node-type-article .field-type-image, .node-type-blog .field-type-image {width: 100%;}
+	#user-profile-form .f.myprofiledetails #share-buttons a{width: 30px;}
+.myprofiledetails #share-ield-type-list-integer {float: none;clear: both;margin: 0;}
+	/*.myprofiledetails #share-buttons iframe{padding:6px 0}*/
+	.page-user form#user-profile-form .form-item.form-type-textfield input { max-width: 260px;}
+	#user-profile-form  .field-type-list-integer{margin-top:0;margin-left:0;}
+	
+}
+@media (max-width:330px){
+#share-buttons a, .myprofiledetails #share-buttons a{width: 30px;}
+.myprofiledetails #share-buttons iframe{width: 30px !important;margin-top:0 !important;padding:6px 0 0}
+#share-buttons iframe:nth-last-child(1) {display: inline-block;}
+#share-buttons iframe:nth-last-child(2) {display: none;}
+#share-buttons img {margin-top: 6px;width: auto;height: auto;}
+}
+@media (max-width: 320px){
+#menu-row {margin-top: 2px;}
+#invite-form input[type="text"] {width: 260px !important;}
+.full_main{margin: 8px 0;}
+#block-block-65{margin-bottom: 10px;}
+	.front .currency-convert-wrap {margin-top: 196px;}
+    #world_gmap ul{top: 160px !important; }
+.form-item-search-block-form input[type="text"]{width: 100% !important;}
+.nav_toggle{padding: 9px !important;}
+form#cse-search-box .gsearch{width: 72% !important;}
+.not-front .region-sidebar-second-top #block-block-139 {margin-left: -8px;}
+}
+

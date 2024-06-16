@@ -1,0 +1,14 @@
+name = Image-Recognition CAPTCHA
+description = Provides CAPTCHA whose solution requires recognizing images.
+package = Spam control
+core = 7.x
+configure = admin/config/people/ir_captcha
+dependencies[] = captcha
+files[] = ir_captcha.test
+
+; Information added by Drupal.org packaging script on 2018-03-21
+version = "7.x-1.0-alpha2"
+core = "7.x"
+project = "ir_captcha"
+datestamp = "1521650284"
+

@@ -1,0 +1,21 @@
+.preview > h3, .node-media-gallery.node-teaser {
+    display: none;
+}
+.node-type-media-gallery .preview {
+    display: block !important;
+}
+.preview .node.node-media-gallery.node-preview {
+    float: none;
+    margin: 0 auto;
+    width: 82%;
+}
+.node-media-gallery.node-preview .field-name-field-gallery-image .lightbox-processed > img {
+	width: 215px;
+	height: 215px;
+	background: #FFFFFF;
+	margin: 7px 0;
+	border: 1px solid #666666;
+	padding: 5px 5px;
+	float: left;
+	margin: 8px 5px;
+}

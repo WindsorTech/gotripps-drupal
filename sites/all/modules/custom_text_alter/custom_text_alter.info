@@ -1,0 +1,12 @@
+;$Id$
+name =custom text alter
+description = A trivial module to customize my content  to change default description
+package = Drupal 7 Development
+configure = admin/config/custom_text_alter
+project = admin_menu
+core = 7.x
+files[] = custom_text_alter.module
+dependencies =block
+;dependencies[] = autoload
+php = 5.2
+ 

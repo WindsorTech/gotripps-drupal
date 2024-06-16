@@ -1,0 +1,123 @@
+.advertisement p {
+  font-size: 11px;
+  color: #A6ACAF;
+  font-family: Tahoma;
+
+}
+
+.container {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.windsortech {
+  color: #D7DBDD;
+}
+
+.windsortech a {
+    color:inherit;
+    text-decoration: none;
+}
+
+#well {
+  border-color: #a3a375;
+  border-width: 1.5px;
+}
+
+#city {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.playnow-title {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.btn-success, .btn-warning {
+  width: 30%;
+  height: 75px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin: auto;
+}
+
+.playnow-title {
+  font-weight: bold;
+}
+
+.bg-primary {
+  width: 40%;
+  margin: auto;
+}
+
+#letters-guessed {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.bg-secondary {
+  width: 9.5%;
+  margin-left: 5px;
+}
+
+#home-score {
+  margin-top: 10px;
+  height: 75px;
+}
+
+.bg-success {
+  width: 10%;
+}
+
+.bg-danger {
+  width: 10%;
+  margin-left: 5px; 
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+  font-weight: bold;
+}
+
+#picture {
+  margin-bottom: 10px;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+.we-coming {
+  width: 100%;
+}
+
+.advertisement p {
+  font-size: 11px;
+  color: #A6ACAF;
+  font-family: Tahoma;
+
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 853px) {
+
+  .advertisement p {
+  font-size: 11px;
+  color: #A6ACAF;
+  font-family: Tahoma;
+
+}
+
+
+}

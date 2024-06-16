@@ -1,0 +1,1 @@
+{"status":"thanks","msg":"E-mail отправлен,все ок."}

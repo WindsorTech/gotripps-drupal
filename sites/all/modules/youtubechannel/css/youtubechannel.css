@@ -1,0 +1,58 @@
+#youtubechannel-player {
+	text-align: center;
+}
+
+#youtubechannel-list {
+  /*overflow-y: scroll;*/
+   padding: 20px;
+   margin-left: -25px;
+}
+
+#youtubechannel-list ul {
+  margin: 30px;
+  padding: 0;
+}
+
+#youtubechannel-list ul li {
+  background: none;
+  display: inline;
+  float: left;
+  margin: 0 0 10px 0;
+  padding: 0 5px 0 0;
+}
+
+#youtubechannel-list h2 {
+  font-size: 16px;
+}
+
+#youtubechannel-list img {
+  border: 1px solid #c3c3c3;
+  height: 140px;
+  padding: 2px;
+}
+ #youtubechannel-list li {
+    
+    float: left;
+list-style: none outside none;
+margin: 15px 3px;
+color: #333333;
+font-size: 13px;
+font-weight: bold;
+width: 193px;
+height: 190px;
+text-align: center;
+padding: 0 0 20px 0px;
+}
+#youtubechannel-list li a:hover, #youtubechannel-list li a:active, #youtubechannel-list li a.active  
+{background: #ebf0f3;
+
+
+}
+#youtubechannel-list li:hover, #youtubechannel-list li:active, #youtubechannel-list li.active  
+{background: #ebf0f3;
+color:#000; 
+box-shadow: 0 0 10px #666;
+-webkit-box-shadow: 0 0 10px #666;
+-moz-box-shadow: 0 0 10px #666;
+
+}

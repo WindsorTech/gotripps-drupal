@@ -1,0 +1,217 @@
+<?php 
+function custom_social_login_menu(){
+  $items = array();
+  $items['social_login'] = array(
+    'title' => t('Google Login'),
+    'description' => 'Login button ',
+    'page callback' => 'google_login',
+    'access arguments' => array('access content'), 
+    'type' => MENU_CALLBACK,
+  );  
+  $items['social_login_twitter'] = array(
+    'title' => t('Twitter Login'),
+    'description' => 'Login button ',
+    'page callback' => 'twitter_login',
+    'access arguments' => array('access content'), 
+    'type' => MENU_CALLBACK,
+  );  
+  
+  return $items;
+}
+function google_login(){
+	require_once 'src/Google_Client.php'; 
+	require_once 'src/contrib/Google_PlusService.php';
+	require_once 'src/contrib/Google_Oauth2Service.php';
+	//session_start();
+	$client = new Google_Client();
+	$client->setApplicationName("Asig 18 Sign in with GPlus");
+	$client->setScopes(array('https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/plus.me')); 
+
+	$client->setClientId('94596035018-23r6m6s42et49knsbru5dnrrkepiarsf.apps.googleusercontent.com');
+	$client->setClientSecret('l216lyhJrLvGRjmwRnl0241I'); 
+	$client->setRedirectUri('http://gotripps.com/social_login');
+	$client->setDeveloperKey('AIzaSyA73RrPSfdvQbrT2R91O3HKlt7DXbokm9M'); // Developer key
+	
+	$client->setAccessType('online');
+	$client->setApprovalPrompt('auto');
+
+	$plus 		= new Google_PlusService($client);
+	$oauth2 	= new Google_Oauth2Service($client); // Call the OAuth2 class for get email address
+	if(isset($_GET['code'])) {
+		$client->authenticate(); // Authenticate
+		$access_token = $client->getAccessToken(); // get the access token here
+	}
+
+	if(isset($access_token)) {
+		$client->setAccessToken($access_token);
+	}
+
+	if ($client->getAccessToken()) {
+  		$googleuser 		= $oauth2->userinfo->get();
+  		$me 		= $plus->people->get('me');
+  		$optParams 	= array('maxResults' => 100);
+  		$activities = $plus->activities->listActivities('me', 'public',$optParams);
+  		// The access token may have been updated lazily.
+  		$access_token = $client->getAccessToken();
+  		$email 	= filter_var($googleuser['email'], FILTER_SANITIZE_EMAIL); 
+	}
+	else {
+		$authUrl = $client->createAuthUrl();
+	}
+
+    $output = '<div class="wrapper">'; 
+	if(isset($authUrl)) {
+		$output .= "<a class='login' href='$authUrl'><img src=\"google-login-button-asif18.png\" alt=\"Google login using php api for your website\" title=\"login with google\" /></a>";
+		} else {
+		$output .= "<a class='logout' href='social_login?logout'>Logout</a>";
+	}
+
+	global $user;
+	global $base_url;
+	global $language;
+	if(isset($googleuser['email']) && !empty($googleuser['email'])) {
+		$red_url=$base_url.'/en/node/add/blog';
+		if(user_load_by_mail($googleuser['email'])){
+			$user = user_load_by_mail($googleuser['email']);
+			drupal_session_regenerate();
+			//drupal_goto($red_url);
+			header('Location: '.$red_url);
+		}
+		else {
+			$name = explode('@', $googleuser['email']);
+			$username=$name[0];
+			$i=1;
+			$mod_username=check_user($username,$i);
+			$newUser = array(
+			  'name' => $mod_username,
+			  'mail' => $googleuser['email'],
+			  'status' => 1,
+			  'init' => $googleuser['email']
+			);            
+			user_save(null, $newUser);
+			$user = user_load_by_mail($googleuser['email']);
+			drupal_session_regenerate();
+			//drupal_goto($red_url);
+			header('Location: '.$red_url);
+		}
+	}
+	return $output;
+}
+function check_user($username,$i){
+	$query= db_query("select uid from users where name ='".$username."'");
+	$row_count=$query->rowCount();
+	$uname='';
+	if($row_count>0){
+		$username=$username.'_'.$i;
+		$i++;
+		$uname=check_user($username,$i);
+	} else {
+		return $username;
+	}
+	return $uname;
+}
+//====================twitter login===============//
+function twitter_login(){
+
+	$output = "";
+
+	include_once("config.php");
+	include_once("inc/twitteroauth.php");
+
+	if(isset($_REQUEST['oauth_token'])) {
+		$the_token = $_REQUEST['oauth_token'];
+
+		// everything looks good, request access token
+		// successful response returns oauth_token, oauth_token_secret, user_id, and screen_name
+		$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $the_token , $_SESSION['token_secret']);
+		$access_token = $connection->getAccessToken($_REQUEST['oauth_verifier']);
+		if($connection->http_code=='200')
+		{
+			//redirect user to twitter
+			//$_SESSION['status'] = 'verified';
+			//$_SESSION['request_vars'] = $access_token;
+			
+			// unset no longer needed request tokens
+			//unset($_SESSION['token']);
+			//unset($_SESSION['token_secret']);
+
+			$screenname 		= $access_token['screen_name'];
+			$twitterid 			= $access_token['user_id'];
+			$oauth_token 		= $access_token['oauth_token'];
+			$oauth_token_secret = $access_token['oauth_token_secret'];
+
+			//Show welcome message
+			$output .= '<div class="welcome_txt">Welcome <strong>'.$screenname.'</strong> (Twitter ID : '.$twitterid.'). <a href="index.php?reset=1">Logout</a>!</div><pre>'.print_r($access_token);
+
+			//header('Location: http://gotripps.com/social_login_twitter');
+		}
+		else{
+			die("error, try again later!");
+		}
+			
+	}
+	else 
+	{
+
+		if(isset($_GET["denied"]))
+		{
+			//header('Location: ./index.php');
+			echo "Inside Denied";
+			die();
+		}
+
+		//fresh authentication
+		$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET);
+		$request_token = $connection->getRequestToken(OAUTH_CALLBACK);
+		
+		//received token info from twitter
+		//$token 			= $request_token['oauth_token'];
+		//$token_secret 	= $request_token['oauth_token_secret'];
+		//$_SESSION['token'] 			= $request_token['oauth_token'];
+		$_SESSION['token_secret'] 	= $request_token['oauth_token_secret'];
+		
+		// any value other than 200 is failure, so continue only if http code is 200
+		if($connection->http_code=='200')
+		{
+		echo $twitter_url; exit;
+			//redirect user to twitter
+			$twitter_url = $connection->getAuthorizeURL($request_token['oauth_token']);
+			header('Location: ' . $twitter_url); 
+		}
+		else{
+			die("error connecting to twitter! try again later!");
+		}
+	}
+
+	return $output;
+}
+
+/** custom alter on facebook aAuth module to redirect user on add blog page after facebook signup.https://www.drupal.org/node/1761954 #14 **/
+
+/**
+* Implements hook_fboauth_actions_alter(): Customise redirect path
+*
+* @see hook_fboauth_actions_alter();
+*/
+function custom_social_login_fboauth_actions_alter(&$actions) {
+  $actions['connect']['callback'] = 'custom_social_login_fboauth_action_connect';
+}
+
+/**
+* Callback for CUSTOM_MODULE_fboauth_actions_alter(): Customise redirect path
+*
+* @see hook_fboauth_actions_alter();
+*/
+function custom_social_login_fboauth_action_connect($app_id, $access_token) {
+
+  // Call the default action first
+  fboauth_action_connect($app_id, $access_token);
+
+  //global $user; //dpm($user);
+
+  /*if($user->uid && $user->created == $user->login){
+    drupal_goto("user/$user->uid/edit");
+  }*/
+  drupal_goto('node/add/blog');
+}
+

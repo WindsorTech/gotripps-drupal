@@ -1,0 +1,20 @@
+/* ---------- Color Module Styles ----------- */
+
+
+
+body,  body.overlay { color: #3b3b3b; }
+.comment .comment-arrow { border-color: #ffffff; }
+#page,  #main-wrapper,  #main-menu-links li a.active,  #main-menu-links li.active-trail a { background: #f2ece1; }
+.tabs ul.primary li a.active { background-color: #ffffff; }
+.tabs ul.primary li a { background-color: #ffffff; border-bottom: 1px solid #ccc; }
+#header { background-color: #fff; background: url(../images/header.png) no-repeat top center; }
+a { color: #0071B3; }
+a:hover,  a:focus { color: #018fe2; }
+a:active { color: #23aeff; }
+.sidebar .block { /* background-color: #f6f6f2;
+
+  border-color: #f9f9f9;*/
+
+}
+#footer-wrapper { background: url(../images/bg_footer_bot.jpg) repeat-x center bottom  #CEC8C3;  min-height:325px !important; }
+.region-header,  .region-header a,  .region-header li a.active,  #name-and-slogan,  #name-and-slogan a,  #secondary-menu-links li a { color: #fff; }

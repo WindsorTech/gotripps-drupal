@@ -1,0 +1,18 @@
+<?php
+
+function custom_user_form_theme() {
+   return array(
+'user_profile_form' => array(
+'arguments' => array('form' => NULL),
+'render element' => 'form',
+'template' => 'user-profile-edit',
+),
+);
+}
+
+
+
+
+
+
+

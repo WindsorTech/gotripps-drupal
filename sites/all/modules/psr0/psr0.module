@@ -1,0 +1,80 @@
+<?php
+/**
+ * @file
+ * Registers a simple PSR-4 autoloader.
+ */
+
+// This is needed for drupal_get_path().
+require_once DRUPAL_ROOT . '/includes/common.inc';
+
+spl_autoload_register('psr0_autoloader');
+
+/**
+ * Get the path to project $name.
+ *
+ * Guesses whether this project is a module or profile.
+ *
+ * @param string $name
+ *   Name of the project.
+ *
+ * @return array
+ *   Array of possible path prefixes for this project name.
+ */
+function _psr0_paths_for_name($name) {
+  // Use the advanced drupal_static() pattern, since this is called very often.
+  static $paths;
+  if (!isset($paths)) {
+    $paths = &drupal_static(__FUNCTION__, array());
+  }
+  if (isset($paths[$name])) {
+    return $paths[$name];
+  }
+
+  $paths[$name] = array();
+
+  if (($path = drupal_get_path('module', $name)) || ($path = drupal_get_path('profile', $name))) {
+    $module_path = $path;
+    if (file_exists($module_path . '/lib/')) {
+      $paths[$name][] = $module_path . '/lib/';
+    }
+  }
+
+  return $paths[$name];
+}
+
+/**
+ * An spl class autoloader function implementing PSR-4.
+ *
+ * Includes the class definition of $fq_class if it can be found via PSR-4.
+ *
+ * @param string $fq_class
+ *   A fully qualified class name.
+ */
+function psr0_autoloader($fq_class) {
+  $parts = explode('\\', $fq_class, 3);
+  // Do nothing if this doesn't look like a PSR-4 class name.
+  if (count($parts) < 3 || $parts[0] != 'Drupal') {
+    return;
+  }
+
+  $paths = _psr0_paths_for_name($parts[1]);
+  $file_part = strtr($parts[2], '\\', '/') . '.php';
+
+  foreach ($paths as $p) {
+    $file = DRUPAL_ROOT . '/' . $p . $file_part;
+    if (file_exists($file)) {
+      require_once $file;
+      return;
+    }
+  }
+}
+
+/**
+ * Implements hook_boot().
+ *
+ * Intentionally left blank!
+ * This tells Drupal that it has to include this module even before invoking
+ * hook_boot().
+ */
+function psr0_boot() {
+}

@@ -1,0 +1,4 @@
+name = Custom Smart IP redirect
+description = "Redirect users to right language on first visit, using Smart IP for country detection."
+core = 7.x
+;dependencies[] = smart_ip

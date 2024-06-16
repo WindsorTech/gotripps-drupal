@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for Image-Recognition CAPTCHA.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function ir_captcha_uninstall() {
+  variable_del('ir_captcha_challenge_prompt');
+  variable_del('ir_captcha_num_correct_images');
+  variable_del('ir_captcha_num_incorrect_images');
+  variable_del('ir_captcha_correct_image_filenames');
+  variable_del('ir_captcha_incorrect_image_filenames');
+}

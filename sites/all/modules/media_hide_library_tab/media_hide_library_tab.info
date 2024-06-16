@@ -1,0 +1,3 @@
+name = Media Hide Library Tab
+description = Hides the library tab displayed on the media module
+core = 7.x

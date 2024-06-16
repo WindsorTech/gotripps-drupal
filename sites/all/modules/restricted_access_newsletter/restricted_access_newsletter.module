@@ -1,0 +1,9 @@
+<?php
+
+function restricted_access_newsletter_entity_info_alter(&$entity_info){
+    $entity_info["newsletter_template"]["access callback"] = "restricted_access_newsletter_template_access";
+}
+
+function restricted_access_newsletter_template_access($op, $entity, $account, $entity_type){
+    return true;
+}

@@ -1,0 +1,12 @@
+;$Id$
+name =My Custom User Forms
+description = A trivial module to customize my content entry forms such as smartphone
+package = Drupal 7 Development
+configure = admin/config/custom_user_forms
+project = admin_menu
+core = 7.x
+files[] = custom_user_forms.module
+dependencies =block
+;dependencies[] = autoload
+php = 5.2
+ 

@@ -1,0 +1,26 @@
+.logged-in .my-form-content {
+    float: right;
+    width: 66%;
+}
+/*.my-post-lisits ul li.post-article {
+background: url(images/myblog3.png) no-repeat left center;
+padding: 23px 0px;
+}*/
+.my-post-lisits ul {
+    list-style-type: none !important;
+
+}
+
+.my-post-lisits ul li.post-photo-gallery { background: url(images/myblog1.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li.post-video { background: url(images/myblog2.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li.post-article { background: url(images/myblog3.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li.post-trip-plan { background: url(images/myblog4.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li.edit-my-content { background: url(images/myblog5.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li.edit-myprofile { background: url(images/myblog6.png) no-repeat -12px center; padding: 23px 0px; }
+.my-post-lisits ul li.edit-account-info { background: url(images/edit-account.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li.invite-friend { background: url(images/invite-a-friend.png) no-repeat left center; padding: 23px 0px; }
+.my-post-lisits ul li span { text-align: center; margin-left: 100px; }
+.my-post-lisits ul li a { padding-left: 82px; text-transform: uppercase; }
+
+
+

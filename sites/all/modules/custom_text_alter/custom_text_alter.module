@@ -1,0 +1,9 @@
+<?php
+function custom_text_alter_form_alter(&$form, &$form_state, $form_id) {
+  //dsm($form_id);  // print form ID to messages
+  //dsm($form);  // pretty print array using Krumo to messages
+	if($form_id == 'invite-form'){
+		$form['field_invitation_email_address']['und'][0]['#description']=t('Type e-mail address of person you wish invite.Enter one E-mail at a time ');
+
+	}
+}

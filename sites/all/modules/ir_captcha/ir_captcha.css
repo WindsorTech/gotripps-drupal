@@ -1,0 +1,25 @@
+/* Display items left to right, top to bottom, with small separation. */
+.ir-captcha-item {
+  float: left;
+  border: 4px solid transparent;
+  margin: 1px;
+  line-height: 0;
+}
+
+/* Indicate when an image is selected. */
+.ir-captcha-item-image-selected {
+  border-color: darkorange;
+}
+
+/* Position response checkbox relative to bottom-right item corner. */
+.ir-captcha-item {
+  position: relative;
+}
+.ir-captcha-item-response {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.ir-captcha-item-response .form-type-checkbox {
+  margin: 0;
+}

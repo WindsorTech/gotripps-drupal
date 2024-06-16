@@ -1,0 +1,167 @@
+<?php
+function custom_content_forms_init() {
+  drupal_add_css(drupal_get_path('theme', 'gotriptv').'/css/preview.css');
+}
+function custom_content_forms_theme() {
+    return array(
+        'photos_node_form' => array(
+            'template' => 'photos-node-form',
+                'render element' => 'form',
+        ),
+		'videos_node_form' => array(
+            'template' => 'videos-node-form',
+                'render element' => 'form',
+        ),
+		'blog_node_form' => array(
+            'template' => 'blog-node-form',
+                'render element' => 'form',
+        ),
+		'viagem_node_form' => array(
+            'template' => 'viagem-node-form',
+                'render element' => 'form',
+        ),
+		'media_gallery_node_form' => array(
+            'template' => 'media_gallery-node-form',
+                'render element' => 'form',
+        ),
+    );
+}
+
+ /** * Preprocessor for theme('photos_node_form'). */ 
+ function template_preprocess_photos_node_form(&$variables) 
+ {  
+  // nodeformcols is an alternative for this solution.
+   if (!module_exists('nodeformcols')) {   $variables['sidebar'] = array(); 
+   // Put taxonomy fields in sidebar. 
+     $variables['sidebar'][] = $variables['form']['field_tags'];
+	  hide($variables['form']['field_tags']);  
+	   // Extract the form buttons, and put them in independent variable.
+	    $variables['buttons'] = $variables['form']['actions']; 
+		hide($variables['form']['actions']); } } 
+		
+		
+		
+		 /** * Preprocessor for theme('videos_node_form'). */ 
+ function template_preprocess_videos_node_form(&$variables) 
+ {  
+  // nodeformcols is an alternative for this solution.
+   if (!module_exists('nodeformcols')) {   $variables['sidebar'] = array(); 
+   // Put taxonomy fields in sidebar. 
+     $variables['sidebar'][] = $variables['form']['field_tags'];
+	  hide($variables['form']['field_tags']);  
+	   // Extract the form buttons, and put them in independent variable.
+	    $variables['buttons'] = $variables['form']['actions']; 
+		hide($variables['form']['actions']); } } 
+		
+		
+		
+		 /** * Preprocessor for theme('blog_node_form'). */ 
+ function template_preprocess_blog_node_form(&$variables) 
+ {  
+  // nodeformcols is an alternative for this solution.
+   if (!module_exists('nodeformcols')) {   $variables['sidebar'] = array(); 
+   // Put taxonomy fields in sidebar. 
+     $variables['sidebar'][] = $variables['form']['field_tags'];
+	  hide($variables['form']['field_tags']);  
+	   // Extract the form buttons, and put them in independent variable.
+	    $variables['buttons'] = $variables['form']['actions']; 
+		hide($variables['form']['actions']); } } 
+		
+		
+		 /** * Preprocessor for theme('viagem_node_form'). */ 
+ function template_preprocess_viagem_node_form(&$variables) 
+ {  
+  // nodeformcols is an alternative for this solution.
+   if (!module_exists('nodeformcols')) {   $variables['sidebar'] = array(); 
+   // Put taxonomy fields in sidebar. 
+     $variables['sidebar'][] = $variables['form']['field_tags'];
+	  hide($variables['form']['field_tags']);  
+	   // Extract the form buttons, and put them in independent variable.
+	    $variables['buttons'] = $variables['form']['actions']; 
+		hide($variables['form']['actions']); } } 
+		
+		
+		
+		
+		
+/**
+ * Disable Vertical tabs on a form with simply changing the value of $form['additional_settings']['#type']
+ * @see https://drupal.org/node/1048644
+ */
+function form_disable_vertical_tabs(&$form){
+  // originally $form['additional_settings']['#type'] equals to 'vertical_tabs'
+  if(isset($form['additional_settings']['#type']) && ($form['additional_settings']['#type'] === 'vertical_tabs')){
+    $form['additional_settings']['#type'] = 'fieldset';
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_content_forms_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
+  global $language;
+  $is_administrator = in_array('administrator', array_values($user->roles));
+
+  if($form_id == 'blog-node-form'){
+    // if $user does NOT have the administrator role.
+    if (!$is_administrator) {
+      // disable vertical tabs for this form
+      form_disable_vertical_tabs($form);
+    }
+  }
+  if($form_id == 'node-media_gallery-form'){
+    // if $user does NOT have the administrator role.
+    if (!$is_administrator) {
+      // disable vertical tabs for this form
+      form_disable_vertical_tabs($form);
+      unset($form['language']);
+    }
+  }
+  if($form_id == 'media_gallery_node_form'){
+    $form['actions']['newpre'] = array('#type' => 'submit',  '#submit' => array('node_form_build_preview'), '#value' => t('Preview'));
+    
+    $form['media_gallery_description']['und'][0]['#format'] = 'full_html';
+    if ($language->language == 'es') {
+      $form['actions']['submit']['#value'] = 'Guardar';    
+    }
+    if ($language->language == 'pt-br') {
+      $form['actions']['submit']['#value'] = 'Salvar'; 
+    }
+    if ($language->language == 'en') {
+      $form['actions']['submit']['#value'] = 'Save';    
+    }
+	//delete
+	$is_verified_writer = in_array('Verified Writer', array_values($user->roles));
+	if($is_verified_writer){
+		$form['actions']['tempdel'] = array('#type' => 'submit', '#weight' => 16, '#submit' => array('custom_node_form_build_unpublish'), '#value' => t('Delete'), '#attributes' => array('onclick' => 'return confirm("Are you sure you want to delete?")'));
+	}
+	
+  }
+
+	if($form_id == 'blog_node_form'){
+		//echo "<pre>"; print_r($user); echo "</pre>";
+		$is_verified_writer = in_array('Verified Writer', array_values($user->roles));
+		if($is_verified_writer){
+			$form['actions']['tempdel'] = array('#type' => 'submit', '#weight' => 16, '#submit' => array('custom_node_form_build_unpublish'), '#value' => t('Delete'), '#attributes' => array('onclick' => 'return confirm("Are you sure you want to delete?")'));
+		}
+		if ($language->language == 'es') {
+			$form['field_tag']['und']['#description'] = 'Escriba una lista de palabras separadas por comas para describir su contenido.';
+		}
+		if ($language->language == 'pt-br') {
+			$form['field_tag']['und']['#description'] = 'Digite uma lista de palavras separadas por vírgulas para descrever o seu conteúdo.';
+		}
+		if ($language->language == 'en') {
+			$form['field_tag']['und']['#description'] = 'Enter a comma-separated list of words to describe your content.';    
+		}
+		//echo "<pre>"; print_r($form); echo "</pre>"; die;
+	}
+}
+
+function custom_node_form_build_unpublish(&$form, &$form_state){
+	$nid = $form_state['node']->nid;
+	$node_load = node_load($nid);
+	$node_load->status = 0;
+	$result = node_save($node_load);
+	drupal_goto('my-profile');
+}

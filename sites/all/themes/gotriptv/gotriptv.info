@@ -1,0 +1,59 @@
+
+name = Gotriptv
+description = A flexible, recolorable theme with many regions.
+package = Core
+version = VERSION
+core = 7.x
+
+scripts[] = js/webfont.js
+scripts[] = js/general.js
+scripts[] = js/google_login.js
+scripts[] = js/custom.js
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/datepicker.css
+stylesheets[all][] = css/colors.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = css/responsive.css
+
+regions[header] = Header
+regions[header_left] = header-left
+
+regions[pricesearch] = Best Price Search Widget Area
+regions[homepage_ad_bottom] = Homepage Ad Bottom
+
+regions[mainmenu] = Mainmenu
+regions[banner] = Banner
+
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+regions[instagram] = instagram
+
+regions[content] = Content
+regions[contentbtm] = Contentbtm
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second_top] = Sidebar second top
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+regions[contentbottom] = contentbottom
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by drupal.org packaging script on 2013-04-03
+version = "7.22"
+project = "drupal"
+datestamp = "1365027012"
+

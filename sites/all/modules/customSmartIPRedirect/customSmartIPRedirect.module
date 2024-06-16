@@ -1,0 +1,54 @@
+<?php
+/**
+ * Implements hook_init().
+*/
+function customSmartIPRedirect_init() { 
+	$request_uri=request_uri();
+	if ($request_uri == '/' || ((strpos($request_uri, '/en/') === false && strpos($request_uri, '/es/') === false && strpos($request_uri, '/pt-br/') === false) && ($request_uri != '/en' && $request_uri != '/es' && $request_uri != '/pt-br'))) {
+		
+		global $base_url;
+
+		$loc_filecontent = file_get_contents("http://getcitydetails.geobytes.com/GetCityDetails?fqcn=".$_SERVER['REMOTE_ADDR']);
+		$loc_arr = json_decode($loc_filecontent); 
+		$country_code = $loc_arr->geobytesinternet;
+		
+		$spanish = array('ES','CO','PE','VE','EC','GT','CU','BO','HN','PY','SV','CR','PA','GQ','PR','MX','AR','CL','DO','NI','UY');
+		$portuguese = array('BR','MZ','AO','PT','GW','CV','MO','ST');
+
+		if(isset($country_code) && !empty($country_code)) {	
+			if(in_array($country_code,$spanish)){
+				// redirect user to the designated language 
+				 drupal_goto($base_url.'/es'.$request_uri);
+			} else if(in_array($country_code,$portuguese)){ 
+				// redirect user to the designated language
+				drupal_goto($base_url.'/pt-br'.$request_uri);
+		  	} else{
+				// redirect user to the designated language
+				drupal_goto($base_url.'/en'.$request_uri);
+		  	}
+		}
+	}
+}
+function customSmartIPRedirect_form_alter(&$form, &$form_state, $form_id){ 
+	switch($form_id){
+		case 'privatemsg_new':
+				if(isset($_GET['uname'])) {
+					$form['recipient']['#default_value'] = $_GET['uname'];
+				}
+		break;
+		case 'contact_site_form':
+		$form['subject']['#access'] = FALSE;
+		break;
+	}
+}
+/*function getIP() {
+  foreach (array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR') as $key) {
+     if (array_key_exists($key, $_SERVER) === true) {
+        foreach (explode(',', $_SERVER[$key]) as $ip) {
+           if (filter_var($ip, FILTER_VALIDATE_IP) !== false) {
+              return $ip;
+           }
+        }
+     }
+  }
+}*/

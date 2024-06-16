@@ -1,0 +1,5 @@
+name = Social Login Google&Twitter
+description = A social login module for google and twitter.
+package = Social Login Package
+core = 7.x
+files[] = custom_social_login.module
