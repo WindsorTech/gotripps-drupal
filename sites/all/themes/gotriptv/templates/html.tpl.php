@@ -72,7 +72,5 @@ jQuery(document).ready(function(){
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <script src="https://ads73306.hotwords.com/show.jsp?id=73306&cor=0614f9"></script>
-  <script async="true" type="text/javascript" src="https://carnage1301.spider.ad?id=34498"></script>
 </body>
 </html>
